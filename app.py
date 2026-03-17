@@ -9,7 +9,7 @@ st.title("📦 Extractor de Datos de Envío #62292832")
 # Configurar API Key (la pondremos en un paso secreto luego)
 api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-pro')
+model = genai.GenerativeModel(model_name='models/gemini-1.5-pro')
 
 uploaded_file = st.file_uploader("Cargá el PDF del Listado Inicial", type="pdf")
 
